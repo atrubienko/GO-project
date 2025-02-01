@@ -1,0 +1,188 @@
+.contacts {
+  position: absolute;
+  box-sizing: border-box;
+  width: 1080px;
+  height: 349px;
+  left: 130px;
+  top: 5294px;
+  
+}
+
+.contacts__title {
+  position: relative;
+  box-sizing: border-box;
+  width: 1070.74px;
+  height: 56px;
+  left: 55px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.contacts__address {
+  box-sizing: border-box;
+  font-style: normal;
+}
+
+.contacts__address::before {
+  content: url(./img/location.svg);
+  position: absolute;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  top: 109px;
+  left: 0px;
+
+}
+.address__street {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 380px;
+  min-height: 61px;
+  left: 65.56px;
+  right: 645px;
+
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: left;
+  margin-bottom: 36px;
+}
+.address__tel::before {
+  content: url(./img/phone-call.svg);
+  position: absolute;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  left: -60px;
+}
+
+.address__tel {
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 11px;
+  max-width: 380px;
+  min-height: 28px;
+  left: 60px;
+}
+
+.tel__link {
+  position: absolute;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.contacts__mail::before {
+  content: url(./img/mail.svg);
+  position: absolute;
+  box-sizing: border-box;
+  width: 32px;
+  height: 24px;
+  top: 236px;
+  left: 0px;
+}
+
+.mail__link {
+  position: absolute;
+  box-sizing: border-box;
+  max-width: 380px;
+  min-height: 28px;
+  left: 60px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.contacts__list {
+  position: absolute;
+  box-sizing: border-box;
+  display: inline;
+  padding-left: 0;
+  list-style:none;
+  max-width: 240px;
+  min-height: 49px;
+  top: 300px;
+  left: 0;
+}
+
+.contacts__item {
+  display: inline;
+  box-sizing: border-box;
+  padding-left: 0;
+  margin-right: 76px;
+  width: 48px;
+  height: 48px;
+}
+
+.contacts__item:last-child{
+  margin-right: 0;
+}
+
+.social__link_vk {
+  position: absolute;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+}
+
+.social__img_vk {
+  position: absolute;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+}
+
+.social__link_tg {
+  position: absolute;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+
+}
+
+.social__img_tg {
+  position: absolute;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+}
+
+.social__link_pin {
+  position: absolute;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+}
+
+.social__img_pin {
+  position: absolute;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+}
+
+.social__link_stumble {
+  position: absolute;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+}
+
+.social__img_stumble {
+  position: absolute;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+}

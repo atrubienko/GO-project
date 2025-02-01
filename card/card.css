@@ -1,0 +1,55 @@
+.card {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card:nth-child(2n) {
+  float: right;
+  margin-right: 0;
+}
+
+.card:nth-child(n+3) {
+  margin-bottom: 0;
+}
+
+.card__img{
+  position: relative;
+  box-sizing: border-box;
+  width: 580px;
+  height: 349px;
+}
+
+.card__link {
+  position: absolute;
+  box-sizing: border-box;
+  min-height: 80px;
+  top: 135px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card__link_vibes {
+  max-width: 374px;
+  left: 103px;
+}
+
+.card__link_star-wars {
+  max-width: 416px;
+  left: 82px;
+}
+
+.card__link_wild-west {
+  max-width: 401px;
+  left: 90px;
+}
+
+.card__link_neon {
+  max-width: 448px;
+  left: 66px;
+}

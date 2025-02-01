@@ -1,0 +1,36 @@
+.booking {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 1440px;
+  min-height: 455px;
+  left: 0;
+  right: 0;
+  top: 1983px;
+  margin-bottom: 100px;
+}
+
+.booking__title {
+  position: absolute;
+  box-sizing: border-box;
+  max-width: 980px;
+  min-height: 56px;
+  left: 230px;
+  right: 230px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.booking__form {  /*Размеры и положение взял произвольные, т.к. в макете вставлен скрин формы и не вижу точных размеров формы*/
+  position: absolute;
+  box-sizing: border-box;
+  max-width: 1136px;
+  top: 106px;
+  left: 152px;
+  right: 152px;
+  font-size: 14px;
+}

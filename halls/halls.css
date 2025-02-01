@@ -1,0 +1,29 @@
+.halls {
+  position: absolute;
+  box-sizing: border-box;
+  max-width: 1180px;
+  min-height: 814px;
+  left: 130px;
+  right: 130px;
+  top: 1069px;
+  margin-bottom: 100px;
+
+}
+
+.halls__title {
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.halls__item {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 580px;
+  min-height: 349px;
+}
+
