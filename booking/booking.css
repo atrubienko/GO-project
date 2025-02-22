@@ -1,21 +1,9 @@
 .booking {
-  position: relative;
-  box-sizing: border-box;
-  max-width: 1440px;
-  min-height: 455px;
-  left: 0;
-  right: 0;
-  top: 1983px;
   margin-bottom: 100px;
+  background: rgb(68, 15, 81);
 }
 
 .booking__title {
-  position: absolute;
-  box-sizing: border-box;
-  max-width: 980px;
-  min-height: 56px;
-  left: 230px;
-  right: 230px;
   margin-bottom: 50px;
   font-size: 40px;
   font-weight: 700;
@@ -25,12 +13,218 @@
   text-transform: uppercase;
 }
 
-.booking__form {  /*Размеры и положение взял произвольные, т.к. в макете вставлен скрин формы и не вижу точных размеров формы*/
-  position: absolute;
-  box-sizing: border-box;
-  max-width: 1136px;
-  top: 106px;
-  left: 152px;
-  right: 152px;
-  font-size: 14px;
+.booking__form { 
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.halls-choose-fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.halls-choose-fieldset>.legend {
+  margin-bottom: 60px;
+}
+
+.legend {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
+
+.halls-choose-fieldset__radio-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 250px;
+  height: 55px; 
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.halls-radio {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+} 
+
+.halls-radio:checked,.label-80-vibes {
+  color: #ffffff;
+  background: rgb(229, 229, 229);
+}
+
+.form__options-choose-fieldset {
+  display: flex;
+  border: none;
+  justify-content: space-around;
+}
+
+.form__options-choose-fieldset>.legend {
+  margin-bottom: 40px;
+}
+
+.options-choose-fieldset__option-choose-fieldset{
+  border: none;
+}
+
+.option-choose-fieldset__legend {
+  margin-bottom: 23px;
+}
+
+.option-choose-fieldset__input-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.option-choose-fieldset__label {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.option-choose-fieldset__radio-button {
+  width: 27px;
+  height: 27px;
+  visibility: hidden;
+}
+
+.option-choose-fieldset__radio-button::after {
+  visibility: visible;
+  display: inline-block;
+  content: "";
+  width: 27px;
+  height: 27px;
+  border-style: none;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+.option-choose-fieldset__checkbox {
+  width: 25px;
+  height: 25px;
+  visibility: hidden;
+}
+
+.option-choose-fieldset__checkbox::after {
+  visibility: visible;
+  display: inline-block;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-style: none;
+  background-color: #ffffff;
+}
+
+.form__time-and-date-choose-fieldset {
+  display: flex;
+  border: none;
+  flex-wrap: wrap;
+  gap: 36px 50px;
+  justify-content: center;
+}
+
+.time-and-date-choose-fieldset__legend {
+  margin-bottom: 60px;
+}
+
+.form__date-time-booking-block {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.date-time-block__date-input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.date-time-block__time-input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.date-time-block__visible-item {
+  width: 134px;
+  background-color: #ffffff;
+  color: black;
+  padding: 12px 27px 12px 20px;
+  align-self: flex-end;
+}
+.time-and-date-choose-fieldset__visible-item-number {
+  width: 300px;
+  background-color: #ffffff;
+  color: black;
+  padding: 12px 27px 12px 20px;
+  align-self: flex-end;
+}
+
+.visible-item__text { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.visible-item__text::after {
+  display: inline-block;
+  content: url(./img/Polygon1.svg);
+  width: 21px;
+  height: 15px;
+} 
+
+.time-and-date-choose-fieldset__date-time-block {
+  display: flex;
+  gap: 32px;
+}
+
+.time-and-date-choose-fieldset__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-name__input, .label-surname__input {
+  width: 280px;
+  height: 52px;
+}
+.label-tel__input, .label-mail__input, .label-number-of-people__input {
+  width: 300px;
+  height: 52px;
+}
+
+.form__submit-button {
+  display: flex;
+  flex-basis: 300px;
+  margin-right: 100px;
+  border-style: none;
+  border-radius: 10px;
+  padding: 16px 50px;
+  background: rgb(255, 255, 255);
+  color: rgb(108, 2, 135);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
 }

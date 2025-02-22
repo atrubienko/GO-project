@@ -1,20 +1,8 @@
 .about {
-  position: absolute;
-  box-sizing: border-box;
-  max-width: 1180px;
-  min-height: 692px;
-  top: 2538px;
-  left: 130px;
-  right: 130px;
   margin-bottom: 100px;
 }
 
 .about__title {
-  position: relative;
-  box-sizing: border-box;
-  left: 100px;
-  width: 980px;
-  height: 56px;
   margin-bottom: 40px;
   font-size: 40px;
   font-weight: 700;
@@ -24,26 +12,23 @@
   text-transform: uppercase;
 }
 
-.about__image {
-  position: absolute;
-  box-sizing: border-box;
-  top: 96px;
-  left: 0;
-  margin-right: 80px;
+.about__content {
+  display: flex;
+  gap: 80px;
+}
+
+.about-content__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 59px;
 }
 
 .about__paragraphs {
-  position:absolute; 
-  box-sizing: border-box;
-  max-width: 500px;
-  min-height: 222px;
-  right: 0;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0;
   text-align: left;
-  margin-bottom: 48px;
 }
 
 .first-paragraph {
@@ -51,23 +36,16 @@
 }
 
 .about__blockquote {
-  position: absolute;
-  box-sizing: border-box;
-  width: 500px;
-  min-height: 325px;
-  left: 680px;
-  bottom: 1px;
-  margin: 0;
+display: flex;
+flex-direction: column;
+gap: 39px;
+margin: 0;
 }
 
 .quote__paragraph {
-  position: absolute;
-  box-sizing: border-box;
-  max-width: 469px;
-  min-height: 191px;
-  top: 8px;
-  left: 55px;
   margin: 0;
+  padding-top: 11px;
+  padding-left: 31px;
   font-size: 44px;
   font-weight: 400;
   line-height: 50px;
@@ -76,10 +54,9 @@
   text-transform: uppercase;
 }
 
-.about__blockquote::after {
-  content:"“";
-  box-sizing: border-box;
-  position: absolute;
+.quote__paragraph::before {
+  content:"“ ";
+  margin-left: -31px;
   width: 38.98px;
   height: 34.41px;
   color: rgb(108, 2, 135);
@@ -94,8 +71,7 @@
 
 .quote__paragraph::after {
   content:" ”";
-  box-sizing: border-box;
-  position: absolute;
+  display: inline;
   color: rgb(108, 2, 135);
   font-size: 44px;
   font-weight: 900;
@@ -106,14 +82,13 @@
   white-space: pre;
 }
 
+.quote__epigrapg-block {
+  display: flex;
+  align-self: flex-end;
+  gap: 29.72px;
+}
 
 .quote__epigraph {
-  position: absolute;
-  box-sizing: border-box;
-  width: 279.28px;
-  height: 84px;
-  bottom: 0;
-  right: 0;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0;
@@ -121,10 +96,7 @@
 }
 
 .quote__img {
-  position: absolute;
-  box-sizing: border-box;
+  align-self: center;
   width: 80px;
   height: 80px;
-  left: 111px;
-  bottom: 2px;
 }

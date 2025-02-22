@@ -1,16 +1,12 @@
 .questions-block__details {
-  position: relative;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
   background-color: #fff;
   color: #1C1A1A;
   font-weight: 700;
   font-size: 24px;
-  padding: 30px 330px 30px 70px;
-  margin-bottom: 100px;
-}
-
-.questions-block__details:not(:last-child){
-  margin-bottom: 20px;
+  padding: 30px 70px;
 }
 
 .questions-block__details:nth-of-type(2n) {
@@ -18,26 +14,23 @@
   color: #fff;
 }
 
-.questions-block__details summary {
+.details-item__summary {
+  box-sizing: border-box;
+  align-self: center;
   list-style: none;
+  line-height: 28px;
 }
 
 .questions-block__details:nth-of-type(odd)::after { 
-  content: url("./img/open-purple.svg");
-  position: absolute;
   box-sizing: border-box;
+  content: url("./img/open-purple.svg");
   width: 46px;
   height: 46px;
-  top: 21px;
-  left: 1064px;
   }
 
 .questions-block__details:nth-of-type(even)::after {
-  content: url("./img/open.svg");
-  position:absolute;
   box-sizing: border-box;
+  content: url("./img/open.svg");
   width: 46px;
   height: 46px;
-  top: 21px;
-  left: 1064px;
 }

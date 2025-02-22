@@ -1,19 +1,8 @@
 .comments {
-  position: absolute;
-  box-sizing: border-box;
-  max-width: 980px;
-  min-height: 1153px;
-  top: 3330px;
-  left: 230px;
-  right: 230px;
   margin-bottom: 100px;
 }
 
 .comments__title {
-  position: relative;
-  box-sizing: border-box;
-  width: 980px;
-  min-height: 56px;
   margin-bottom: 40px;
   font-size: 40px;
   font-weight: 700;
@@ -23,53 +12,41 @@
   text-transform: uppercase;
 }
 
+.comments__ul {
+display: flex;
+flex-direction: column;
+gap: 50px;
+}
+
 .ul__li-quote {
-  position: relative;
-  box-sizing: border-box;
-  width: 980px;
-  min-height: 319px;
-  margin-bottom: 50px;
   padding: 0;
 }
 
-.ul__li-quote:last-child {
-  margin-bottom: 0;
-}
-
 .li-quote__blockquote {
-margin: 0;
+  display: flex;
+  margin: 0;
+  gap: 20px;
 }
 
 .blockquote__figure {
-  position: absolute;
-  box-sizing: border-box;
-  width: 280px;
-  min-height: 319px;
+display: flex;
+flex-direction: column;
+gap: 11px;
 }
 
 .figure__figcaption {
-  position: absolute;
-  box-sizing: border-box;
-  width: 280px;
-  min-height: 28px;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0;
   text-align: center;
 }
 
 .blockquote__paragraph {
-  position: absolute;
-  box-sizing: border-box;
   max-width: 680px;
   min-height: 88px;
-  top: 52px;
-  right: 0;
   margin: 0;
+  padding-top: 52px;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0;
-  text-align: left;
 }

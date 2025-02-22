@@ -1,0 +1,63 @@
+.we-have { 
+margin-bottom: 100px;
+}
+
+.we-have__title { 
+  display: flex;
+  justify-self: center;
+  max-width: 980px;
+  padding: 0 50px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.we-have__list { 
+display: flex;
+flex-wrap: wrap;
+gap: 39px 20px;
+}
+
+.we-have-list__item { 
+  width: 380px;
+  height: 228px;
+  padding: 166px 40px 0 40px;
+}
+
+.we-have-list__item_vr { 
+background-image: url(./img/vr.jpeg);
+padding-bottom: 34px;
+}
+
+.we-have-list__text { 
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.we-have-list__item_audio { 
+  background-image: url(./img/audio.jpeg);
+
+}
+
+.we-have-list__item_karaoke { 
+  background-image: url(./img/karaoke.jpeg);
+}
+
+.we-have-list__item_table { 
+  background-image: url(./img/table.jpeg);
+}
+
+.we-have-list__item_films { 
+  background-image: url(./img/films.jpeg);
+}
+
+.we-have-list__item_ps5 { 
+  background-image: url(./img/ps5.jpeg);
+}

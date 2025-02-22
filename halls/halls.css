@@ -1,17 +1,8 @@
 .halls {
-  position: absolute;
-  box-sizing: border-box;
-  max-width: 1180px;
-  min-height: 814px;
-  left: 130px;
-  right: 130px;
-  top: 1069px;
   margin-bottom: 100px;
-
 }
 
 .halls__title {
-  box-sizing: border-box;
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
@@ -21,9 +12,16 @@
 }
 
 .halls__item {
-  position: relative;
-  box-sizing: border-box;
-  max-width: 580px;
-  min-height: 349px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 580px;
+  height: 349px;
+}
+
+.halls__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
 }
 
