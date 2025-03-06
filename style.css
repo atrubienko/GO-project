@@ -124,3 +124,7 @@ iframe {
 html {
   position:relative;
 }
+
+:hover, :focus, :active {
+  transition-duration: 400ms;
+}

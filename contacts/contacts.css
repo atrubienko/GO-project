@@ -106,6 +106,22 @@ margin-bottom: 156px;
 .social__link,.social__img {
   width: 48px;
   height: 48px;
+  transition: fill 0.4s, border-color 0.4s;
+  border: 1px solid transparent;
+}
+
+.social__link:hover svg {
+  fill: #eadeed;
+}
+
+.social__link:focus svg {
+  fill: #eadeed;
+  border: 1px solid #cd06ff;
+}
+
+.social__link:active svg {
+  fill: #cd06ff;
+  border: none;
 }
 
 .contacts__copy-text {

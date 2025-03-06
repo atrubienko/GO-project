@@ -1,3 +1,11 @@
+.card {
+  transition: transform 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
 .card_vibes {
   background-image: url(../card/img/80s-vibes.jpg);
   background-size: contain;

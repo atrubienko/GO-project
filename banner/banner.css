@@ -109,15 +109,66 @@
   text-align: left;
   text-transform: uppercase;
   padding: 25px 69px;
+  transition: background 0.4s;
 }
 
-.banner__down-button::after {
+.banner__booking-button:hover, .banner__booking-button:focus {
+  cursor: pointer;
+  background: #840aa3;
+}
+
+.banner__booking-button:active {
+  background: #640aa3;
+}
+
+.banner__down-button {
   display: flex;
   position: relative;
-  content: url(./img/down.svg);
   justify-self: center;
   z-index: 2;
   margin-top: -33px;
+}
+
+.down-button__img {
+  position: relative;
+}
+
+.banner__down-button::before {
+  position: absolute;
+  content: url(./img/hover-down.svg);
+  justify-self: center;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.banner__down-button::after {
+  position: absolute;
+  content: url(./img/focus-down.svg);
+  justify-self: center;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.down-button__active::after {
+  position: absolute;
+  content: url(./img/active-down.svg);
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.banner__down-button:hover::before {
+  opacity: 1;
+}
+
+.banner__down-button:focus::after {
+  opacity: 1;
+}
+
+.down-button__active:active::after {
+  opacity: 1;
 }
 
 .banner::after {

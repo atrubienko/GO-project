@@ -48,8 +48,16 @@
   border-radius: 10px;
   margin-bottom: 3px;
   align-self: flex-end;
+  transition: background-color 0.4s, border-color 0.4s;
 }
 
-.header__call-button:hover {
-  cursor: pointer ;
+.header__call-button:hover, .header__call-button:focus {
+  cursor: pointer;
+  background-color: #6C0287;
+  border-color:  #6C0287;
+}
+
+.header__call-button:active {
+  background-color: #640aa3;
+  border: 1px solid #000;
 }
