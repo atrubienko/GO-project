@@ -13,7 +13,7 @@
   letter-spacing: 0;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 110px;
 }
 
 .we-have__list { 
@@ -31,6 +31,13 @@
 
 .we-have-list__item:hover {
   transform: scale(1.1);
+}
+
+.we-have-list__item_vr,
+.we-have-list__item_karaoke,
+.we-have-list__item_table,
+.we-have-list__item_ps5 {
+  margin-top: -70px;
 }
 
 .we-have-list__text { 

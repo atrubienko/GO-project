@@ -1,6 +1,6 @@
 .booking {
   margin-bottom: 100px;
-  background: rgb(68, 15, 81);
+  background: var(--violet-color);
 }
 
 .booking__title {
@@ -48,7 +48,7 @@
   flex-basis: 250px;
   height: 55px; 
   cursor: pointer;
-  background: rgb(255, 255, 255);
+  background: var(--white-color);
   border-radius: 8px;
   color: black;
   font-size: 30px;
@@ -66,23 +66,23 @@
 } 
 
 .radio-label:hover {
-  background: #eadeed;
-  border: 3px solid #640aa3;
+  background: var(--light-pink-color);
+  border: 3px solid var(--black-violet-color-2);
 }
 
 .radio-label:focus {
-  background: #fff;
-  border: 3px solid #640aa3;
+  background: var(--white-color);
+  border: 3px solid var(--black-violet-color-2);
 }
 
 .radio-label:active {
-  background: #6c0287;
-  border: #fff;
+  background: var(--violet-color-2);
+  border: var(--white-color);
 }
 
 
 .halls-radio:checked,.label-80-vibes {
-  color: #ffffff;
+  color: var(--white-color);
   background: rgb(229, 229, 229);
 }
 
@@ -133,7 +133,7 @@
   height: 27px;
   border-style: none;
   border-radius: 100%;
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
 .option-choose-fieldset__radio-button::after {
@@ -218,7 +218,7 @@
 
 .date-time-block__visible-item {
   width: 134px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   color: black;
   padding: 12px 27px 12px 20px;
   align-self: flex-end;
@@ -226,7 +226,7 @@
 
 .time-and-date-choose-fieldset__visible-item-number {
   width: 300px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   color: black;
   padding: 12px 27px 12px 20px;
   align-self: flex-end;
@@ -258,7 +258,7 @@
   width: 280px;
   height: 52px;
   transition: border-color 0.4s;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--white-color);
 }
 
 .label-tel__input, .label-mail__input, .label-number-of-people__input {
@@ -268,7 +268,7 @@
 
 .label-tel__input, .label-mail__input {
   transition: border-color 0.4s;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--white-color);
 }
 
 .label-name__input:focus, 
@@ -276,7 +276,7 @@
 .label-tel__input:focus,
 .label-mail__input:focus {
   outline: none;
-  border: 2px solid #cd06ff;
+  border: 2px solid var(--pink-color);
 }
 
 .form__submit-button {
@@ -288,8 +288,8 @@
   margin-right: 100px;
   border-style: none;
   border-radius: 10px;
-  background: rgb(255, 255, 255);
-  color: rgb(108, 2, 135);
+  background: var(--white-color);
+  color: var(--violet-color-2);
   font-size: 22px;
   font-weight: 700;
   line-height: 28px;
@@ -299,17 +299,17 @@
 }
 
 .form__submit-button:hover {
-  background: #eadeed;
-  border: 3px solid #6c0287;
+  background: var(--light-pink-color);
+  border: 3px solid var(--violet-color-2);
 }
 
 .form__submit-button:focus {
   outline: none;
-  background: #fff;
-  border: 3px solid #6c0287;
+  background: var(--white-color);
+  border: 3px solid var(--violet-color-2);
 }
 
 .form__submit-button:active {
-  background: #eadeed;
+  background: var(--light-pink-color);
   border: none;
 }

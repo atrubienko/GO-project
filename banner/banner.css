@@ -42,7 +42,7 @@
 
 
 .four-halls-text { 
-  color: rgb(255, 255, 255);
+  color: var(--white-color);
   font-size: 30px;
   font-weight: 400;
   line-height: 34px;
@@ -51,7 +51,7 @@
 }
 
 .four-halls-text_four { 
-  color: rgb(205, 6, 255);
+  color: var(--pink-color);
   font-size: 100px;
   font-weight: 900;
   line-height: 141px;
@@ -78,7 +78,7 @@
 
 .new-equipment-text_new {
   display: flex;
-  color: rgb(205, 6, 255);
+  color: var(--pink-color);
   font-size: 75px;
   font-weight: 900;
   line-height: 106px;
@@ -91,7 +91,7 @@
   position: absolute;
   width: 374px;
   height: 80px;
-  background: rgb(108, 2, 135);
+  background: var(--violet-color-2);
   border-radius: 10px;
   filter: blur(20px);
 }
@@ -100,8 +100,8 @@
   position: relative;
   border-radius: 10px;
   border: 0;
-  background: rgb(108, 2, 135);
-  color: rgb(255, 255, 255);
+  background: var(--violet-color-2);
+  color: var(--white-color);
   font-size: 26px;
   font-weight: 700;
   line-height: 30px;
@@ -114,11 +114,11 @@
 
 .banner__booking-button:hover, .banner__booking-button:focus {
   cursor: pointer;
-  background: #840aa3;
+  background: var(--light-violet-color-2);
 }
 
 .banner__booking-button:active {
-  background: #640aa3;
+  background: var(--black-violet-color-2);
 }
 
 .banner__down-button {

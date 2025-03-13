@@ -59,7 +59,7 @@ margin: 0;
   margin-left: -31px;
   width: 38.98px;
   height: 34.41px;
-  color: rgb(108, 2, 135);
+  color: var(--violet-color-2);
   font-size: 44px;
   font-weight: 900;
   line-height: 50px;
@@ -72,7 +72,7 @@ margin: 0;
 .quote__paragraph::after {
   content:" ”";
   display: inline;
-  color: rgb(108, 2, 135);
+  color: var(--violet-color-2);
   font-size: 44px;
   font-weight: 900;
   line-height: 50px;

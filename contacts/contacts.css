@@ -111,16 +111,16 @@ margin-bottom: 156px;
 }
 
 .social__link:hover svg {
-  fill: #eadeed;
+  fill: var(--light-pink-color);
 }
 
 .social__link:focus svg {
-  fill: #eadeed;
-  border: 1px solid #cd06ff;
+  fill: var(--light-pink-color);
+  border: 1px solid var(--pink-color);
 }
 
 .social__link:active svg {
-  fill: #cd06ff;
+  fill: var(--pink-color);
   border: none;
 }
 

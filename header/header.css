@@ -35,7 +35,7 @@
 .header__call-button {
   box-sizing: border-box;
   height: 55px;
-  color: rgb(255, 255, 255);
+  color: var(--white-color);
   background-color: inherit;
   padding: 12px 32px;
   padding-bottom: 13px;
@@ -44,7 +44,7 @@
   line-height: 30px;
   letter-spacing: 0;
   text-transform: uppercase;
-  border: 3px solid rgb(205, 6, 255);
+  border: 3px solid var(--pink-color);
   border-radius: 10px;
   margin-bottom: 3px;
   align-self: flex-end;
@@ -53,11 +53,11 @@
 
 .header__call-button:hover, .header__call-button:focus {
   cursor: pointer;
-  background-color: #6C0287;
-  border-color:  #6C0287;
+  background-color: var(--violet-color-2);
+  border-color:  var(--violet-color-2);
 }
 
 .header__call-button:active {
-  background-color: #640aa3;
-  border: 1px solid #000;
+  background-color: var(--black-violet-color-2);
+  border: 1px solid var(--black-color);
 }

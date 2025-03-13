@@ -34,6 +34,17 @@ flex-direction: column;
 gap: 11px;
 }
 
+.figure::before {
+  display: block;
+  position: absolute;
+  content: " ";
+  width: 280px;
+  height: 280px;
+  border-radius: 140px;
+  background: radial-gradient(50.00% 50.00% at 50% 50%,rgba(196, 196, 196, 0),rgba(108, 2, 135, 0.5) 100%);
+  z-index: 2;
+}
+
 .figure__figcaption {
   font-size: 20px;
   font-weight: 400;
