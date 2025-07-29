@@ -1,8 +1,12 @@
 .header__flexbox {
   display: flex;
-  flex-basis: 1180px;
   justify-content: space-between;
   margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+.header__logo {
+  display: flex;
 }
 
 .header__logo::before {
@@ -16,9 +20,10 @@
 .navigation {
   display: flex;
 }
+
 .header__list {
   display: flex;
-  flex-basis: 587px;
+  max-width: 587px;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
@@ -26,6 +31,7 @@
 
 .header-list__item {
   display: flex;
+  min-width: fit-content;
   font-size: 22px;
   font-weight: 400;
   line-height: 50px;
@@ -61,3 +67,106 @@
   background-color: var(--black-violet-color-2);
   border: 1px solid var(--black-color);
 }
+
+@media (max-width: 1049px) {
+
+  .header__flexbox {
+    margin-bottom: 30px;
+  }
+  
+  .header__logo::before {
+    width: 87px;
+    height: 55px;
+    background-image: url(./img/logo1024px.svg);
+  }
+  
+  .header__list {
+    max-width: 430px;
+    gap: 20px;
+  }
+  
+  .header-list__item {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .header__call-button {
+    height: 45px;
+    padding: 10px 26px;
+    padding-bottom: 11px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+  }
+}
+
+  @media (max-width: 820px) {
+    .header__flexbox {
+      margin-bottom: 30px;
+    }
+    
+    .header__logo {
+      align-items: center;
+      flex-basis: 300px;
+      justify-content: space-between;
+    }
+
+    .header__logo::before {
+      order: 1;
+    }
+
+    .header__logo::after {
+      display: flex;
+      content: " ";
+      width: 54px;
+      height: 29px;
+      background-image: url(./img/menu768px.svg);
+      order: 0;
+    }
+
+    .header__list {
+      display: none;
+      visibility: hidden;
+    }
+
+    .header__call-button {
+      height: 45px;
+      padding: 10px 26px;
+      padding-bottom: 11px;
+      font-size: 18px;
+      line-height: 24px;
+      border-radius: 8px;
+      margin-bottom: 4px;
+    }
+  }
+
+  @media (max-width: 545px) {
+    .header__flexbox {
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+    
+    .header__logo {
+      align-items: center;
+      flex-basis: 280px;
+      justify-content: space-between;
+    }
+
+    .header__logo::before {
+      order: 1;
+      background-image: url(./img/logo320px.svg);
+      width: 66px;
+      height: 42px;
+    }
+
+    .header__logo::after {
+      width: 39px;
+      height: 20px;
+      background-image: url(./img/menu320px.svg);
+    }
+
+    .header__call-button {
+      display: none;
+    }
+  }

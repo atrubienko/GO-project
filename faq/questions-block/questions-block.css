@@ -23,7 +23,7 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  height: 88px;
+  height: 87px;
   justify-content: space-between;
   list-style: none;
   line-height: 28px;
@@ -119,3 +119,106 @@
   opacity: 0;
   visibility: hidden;
 } 
+
+@media (max-width: 1049px) {
+  .questions-block__details {
+    font-size: 20px;
+    padding: 0 20px 0 25px;
+  }
+  
+  .questions-block__details:nth-of-type(n) {
+    background-color: var(--white-color);
+    color: var(--black-color);
+  }
+
+  .questions-block__details:last-of-type {
+    display: none;
+  }
+
+  .details-item__summary {
+    height: 70px;
+    line-height: 24px;
+  }
+  
+  .summary-icons {
+    display: inline-flex;
+    position: relative;
+    width: 46px;
+    height: 46px;
+  }
+  
+  .odd-icons__open-purple,.even-icons__open { 
+    position: absolute;
+    content: url("./img/open-purple.svg");
+    opacity: 1;
+  }
+  
+  .odd-icons__hover-open-purple, .even-icons__hover-open {
+    position: absolute;
+    content: url("./img/hover-open-purple.svg");
+    transition: opacity 0.4s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .odd-icons__active-close-purple, .even-icons__close {
+    position: absolute;
+    content: url("./img/active-close-purple.svg");
+    transition: opacity 0.4s;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+} 
+
+@media (max-width: 820px) {
+  .questions-block__details {
+    font-size: 18px;
+    padding: 0 65px 0 54px;
+  }
+
+  .details-item__summary {
+    height: 70px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 545px) {
+  .questions-block__details {
+    font-size: 12px;
+    padding: 0 13px 0 10px;
+  }
+
+  .details-item__summary {
+    height: 46px;
+    line-height: 16px;
+
+  }
+
+  .summary-icons {
+    width: 30px;
+    height: 30px;
+  }
+
+  .odd-icons__open-purple,.even-icons__open { 
+    position: absolute;
+    content: url("./img/open30px.svg");
+    opacity: 1;
+  }
+  
+  .odd-icons__hover-open-purple, .even-icons__hover-open {
+    position: absolute;
+    content: url("./img/hover-open30px.svg");
+    transition: opacity 0.4s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .odd-icons__active-close-purple, .even-icons__close {
+    position: absolute;
+    content: url("./img/active-close-purple.svg");     /* в макете нет этих элементов размером 30px*/
+    transition: opacity 0.4s;
+    opacity: 0;
+    visibility: hidden;
+  }
+}

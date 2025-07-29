@@ -6,6 +6,7 @@
   display: flex;
   justify-self: center;
   max-width: 980px;
+  min-height: 103px;
   padding: 0 50px;
   font-size: 40px;
   font-weight: 700;
@@ -27,6 +28,7 @@
   height: 228px;
   padding: 166px 40px 0 40px;
   transition: transform 0.4s;
+  background-size: cover;
 }
 
 .we-have-list__item:hover {
@@ -72,4 +74,125 @@ padding-bottom: 34px;
 
 .we-have-list__item_ps5 { 
   background-image: url(./img/ps5.jpeg);
+}
+
+@media (max-width: 1049px) {
+  .we-have { 
+    margin-bottom: 70px;
+  }
+  
+  .we-have__title { 
+    max-width: 904px;
+    min-height: 80px;
+    padding: 0 125px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 89px;
+  }
+  
+  .we-have__list { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px 21px;
+  }
+  
+  .we-have-list__item { 
+    width: 287px;
+    height: 172px;
+    padding: 114px 20px 0 20px;
+  }
+  
+  .we-have-list__item_vr,
+  .we-have-list__item_karaoke,
+  .we-have-list__item_table,
+  .we-have-list__item_ps5 {
+    margin-top: -53px;
+  }
+  
+  .we-have-list__item_vr { 
+    padding-bottom: 30px;
+  }
+
+  .we-have-list__item_films {
+    padding-top: 83px;
+  }
+} 
+
+@media (max-width: 820px) {
+.we-have { 
+    margin-bottom: 70px;
+  }
+  
+  .we-have__title { 
+    max-width: 687px;
+    min-height: 72px;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .we-have__list { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .we-have-list__item { 
+    width: 334px;
+    height: 200px;
+    padding: 132px 30px 0 30px;
+  }
+  
+  .we-have-list__item_vr,
+  .we-have-list__item_karaoke,
+  .we-have-list__item_table,
+  .we-have-list__item_ps5 {
+    margin-top: 0;
+  }
+  
+  .we-have-list__item_vr { 
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 545px) {
+.we-have { 
+    margin-bottom: 70px;
+  }
+  
+  .we-have__title { 
+    max-width: 280px;
+    min-height: 36px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .we-have__list { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .we-have-list__item { 
+    width: 135px;
+    height: 75px;
+    padding: 30px 10px;
+  }
+  
+  .we-have-list__item:hover {
+    transform: scale(1.1);
+  }
+  
+  .we-have-list__text { 
+    font-size: 10px;
+    line-height: 14px;
+  }
+  
+  .we-have-list__item_vr { 
+    padding-bottom: 0;
+  }
 }

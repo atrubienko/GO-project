@@ -1,0 +1,422 @@
+@import "../index.css";
+@import "../header/header.css";
+@import "../contacts/contacts.css";
+
+.header {
+  margin-bottom: 100px;
+}
+
+.header__back-link {
+  display: flex;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.header__back-link::before {
+  display: block;
+  content: url(./img/Arrow.svg);
+}
+
+.hall-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  min-height: 750px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.hall-banner_vibes {
+  background-image: url(./80s-vibes/img/vibes-banner.jpeg);
+  background-size: cover;
+}
+
+.hall-banner_starwars {
+  background-image: url(./star-wars/img/star-wars-banner.jpeg);
+  background-size: cover;
+}
+
+.hall-banner_wildwest {
+  background-image: url(./wild-west/img/wildwest-banner.jpg);
+  background-size: cover;
+}
+
+.hall-banner_neonstyle {
+  background-image: url(./neon-style/img/neon-style-banner.jpeg);
+  background-size: cover;
+}
+
+.hall-banner__title {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header__paragraph {
+  max-width: 1000px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  place-self: center;
+}
+
+.hall-about {
+  margin-bottom: 100px;
+}
+
+.hall-about__title {
+  margin-bottom: 40px;
+  min-height: 56px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hall-about__content {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.hall-about-content__image {
+  width: 600px;
+  height: 424px;
+  background-size: cover;
+}
+
+.hall-about-content__image_vibes {
+  background-image: url(./80s-vibes/img/about-vibes.jpeg);
+}
+
+.hall-about-content__image_starwars {
+  background-image: url(./star-wars/img/star-wars-about.jpeg);
+}
+
+.hall-about-content__image_wildwest {
+  background-image: url(./wild-west/img/wildwest-about.jpeg);
+}
+
+.hall-about-content__image_neonstyle {
+  background-image: url(./neon-style/img/neon-style-about.jpeg);
+}
+
+.hall-about-content__paragraphs {
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.another-halls {
+  margin-bottom: 100px;
+}
+
+.another-halls__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.another-halls__list {
+  display: flex;
+  gap: 20px;
+}
+
+.another-halls__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 229px;
+    background-size: cover;
+    transition: transform 0.4s;
+}
+
+.another-halls__item_vibes {
+  background-image: url(./img/another-room-vibes.jpeg);
+}
+
+.another-halls__item_wildwest {
+  background-image: url(./img/another-room-west.jpeg);
+}
+
+.another-halls__item_starwars {
+  background-image: url(./img/another-room-wars.jpeg);
+}
+
+.another-halls__item_neonstyle {
+  background-image: url(./img/another-room-neon.jpeg);
+}
+
+.another-halls__item:hover {
+  transform: scale(1.1);
+}
+
+.another-halls-item__link {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 110px;
+}
+
+.contacts {
+  padding-top: 32px;
+}
+
+@media (max-width: 1049px) {
+  .header {
+    margin-bottom: 70px;
+  }
+  
+  .hall-banner {
+    max-width: 1024px;
+    min-height: 534px;
+    margin-bottom: 70px;
+  }
+  
+  .header__paragraph {
+    max-width: 800px;
+    font-size: 20px;
+  }
+  
+  .hall-about {
+    margin-bottom: 70px;
+  }
+  
+  .hall-about__title {
+    margin-bottom: 36px;
+    min-height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  
+  .hall-about__content {
+    gap: 30px;
+  }
+  
+  .hall-about-content__image {
+    width: 461px;
+    height: 326px;
+  }
+  
+  .hall-about-content__paragraphs {
+    max-width: 413px;
+    font-size: 18px;
+  }
+  
+  .another-halls {
+    margin-bottom: 70px;
+  }
+  
+  .another-halls__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
+  
+  .another-halls__item {
+      width: 288px;
+      height: 172px;
+  }
+  
+  .another-halls-item__link {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 110px;
+  }
+  
+  .contacts {
+    padding-top: 12px;
+  }
+} 
+
+@media (max-width: 820px) {
+  .header {
+    margin-bottom: 60px;
+  }
+  
+  .header__back-link {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  
+  .hall-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 768px;
+    min-height: 402px;
+    margin-bottom: 60px;
+  }
+  
+  .hall-banner__title {
+    font-size: 60px;
+    line-height: 120%;
+  }
+  
+  .header__paragraph {
+    max-width: 688px;
+    font-size: 16px;
+  }
+  
+  .hall-about {
+    margin-bottom: 60px;
+  }
+  
+  .hall-about__title {
+    margin-bottom: 30px;
+    min-height: 36px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  .hall-about__content {
+    gap: 46px;
+  }
+  
+  .hall-about-content__image {
+    width: 329px;
+    height: 326px;
+  }
+  
+  .hall-about-content__paragraphs {
+    max-width: 313px;
+    font-size: 16px;
+  }
+  
+  .another-halls {
+    margin-bottom: 60px;
+  }
+  
+  .another-halls__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .another-halls__list {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .another-halls__item {
+      width: 224px;
+      height: 134px;
+  }
+  .another-halls-item__link {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  
+  .contacts {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 545px) {
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .header__back-link {
+    font-size: 12px;
+    line-height: 16px;
+    gap: 6px;
+    margin-bottom: 15px;
+  }
+  
+  .header__back-link::before {
+    content: url(./img/Arrow320px.svg);
+  }
+
+  .hall-banner {
+    max-width: 320px;
+    min-height: 168px;
+    margin-bottom: 30px;
+  }
+  
+  .hall-banner__title {
+    font-size: 30px;
+    line-height: 120%;
+  }
+  
+  .header__paragraph {
+    max-width: 280px;
+  }
+  
+  .hall-about {
+    margin-bottom: 30px;
+  }
+  
+  .hall-about__title {
+    margin-bottom: 15px;
+    min-height: 18px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .hall-about__content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .hall-about-content__image {
+    width: 280px;
+    height: 180px;
+  }
+  
+  .hall-about-content__paragraphs {
+    max-width: 280px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .another-halls {
+    margin-bottom: 30px;
+  }
+  
+  .another-halls__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .another-halls__list {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  
+  .another-halls__item {
+      width: 280px;
+      height: 140px;
+  }
+  .another-halls-item__link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .contacts {
+    padding-top: 7px;
+  }
+}

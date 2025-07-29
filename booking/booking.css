@@ -1,10 +1,12 @@
 .booking {
+  padding-top: 80px;
   margin-bottom: 100px;
   background: var(--violet-color);
 }
 
 .booking__title {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  min-height: 56px;
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
@@ -26,7 +28,7 @@
 }
 
 .halls-choose-fieldset>.legend {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .legend {
@@ -50,7 +52,7 @@
   cursor: pointer;
   background: var(--white-color);
   border-radius: 8px;
-  color: black;
+  color: var(--black-color);
   font-size: 30px;
   font-weight: 700;
   line-height: 40px;
@@ -67,19 +69,18 @@
 
 .radio-label:hover {
   background: var(--light-pink-color);
-  border: 3px solid var(--black-violet-color-2);
+  border: 3px solid var(--violet-color-2);
 }
 
 .radio-label:focus {
   background: var(--white-color);
-  border: 3px solid var(--black-violet-color-2);
+  border: 3px solid var(--violet-color-2);
 }
 
 .radio-label:active {
   background: var(--violet-color-2);
   border: var(--white-color);
 }
-
 
 .halls-radio:checked,.label-80-vibes {
   color: var(--white-color);
@@ -102,6 +103,7 @@
 
 .option-choose-fieldset__legend {
   margin-bottom: 23px;
+  text-align: left;
 }
 
 .option-choose-fieldset__input-block {
@@ -189,12 +191,12 @@
   display: flex;
   border: none;
   flex-wrap: wrap;
-  gap: 36px 50px;
+  gap: 14px 50px;
   justify-content: center;
 }
 
 .time-and-date-choose-fieldset__legend {
-  margin-bottom: 60px;
+  margin-bottom: 38px;
 }
 
 .form__date-time-booking-block {
@@ -219,7 +221,7 @@
 .date-time-block__visible-item {
   width: 134px;
   background-color: var(--white-color);
-  color: black;
+  color: var(--black-color);
   padding: 12px 27px 12px 20px;
   align-self: flex-end;
 }
@@ -227,13 +229,14 @@
 .time-and-date-choose-fieldset__visible-item-number {
   width: 300px;
   background-color: var(--white-color);
-  color: black;
+  color: var(--black-color);
   padding: 12px 27px 12px 20px;
   align-self: flex-end;
 }
 
 .visible-item__text { 
   display: flex;
+  font-size: 18px;
   justify-content: space-between;
 }
 
@@ -252,6 +255,10 @@
 .time-and-date-choose-fieldset__label {
   display: flex;
   flex-direction: column;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  gap: 6px;
 }
 
 .label-name__input, .label-surname__input {
@@ -280,6 +287,7 @@
 }
 
 .form__submit-button {
+  position: relative;
   display: flex;
   flex-basis: 300px;
   height: 60px;
@@ -296,6 +304,19 @@
   text-transform: uppercase;
   margin-bottom: 80px;
   transition: background 0.4s, border-color 0.4s;
+  z-index: 1;
+}
+
+.form__submit-button::before {
+  display: block;
+  content: " ";
+  position: absolute;
+  border-radius: 10px;
+  background: var(--white-color);
+  width: 300px;
+  height: 60px;
+  filter: blur(20px);
+  z-index: -1;
 }
 
 .form__submit-button:hover {
@@ -312,4 +333,293 @@
 .form__submit-button:active {
   background: var(--light-pink-color);
   border: none;
+}
+
+@media (max-width: 1049px) {
+  .booking {
+    padding-top: 60px;
+    margin-bottom: 70px;
+  }
+  
+  .booking__title {
+    margin-bottom: 25px;
+    min-height: 56px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .halls-choose-fieldset>.legend {
+    margin-bottom: 26px;
+  }
+
+  .radio-label {
+    flex-basis: 180px;
+    height: 44px; 
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .form__options-choose-fieldset>.legend {
+    margin-bottom: 26px;
+  }
+  
+  .form__time-and-date-choose-fieldset {
+      gap: 14px 49px;
+  }
+  
+  .time-and-date-choose-fieldset__legend {
+    margin-bottom: 26px;
+  }
+  
+  .form__date-time-booking-block {
+    gap: 50px;
+  }
+
+  .label-name__input, .label-surname__input {
+    width: 251px;
+  }
+  
+  .label-tel__input, .label-mail__input, .label-number-of-people__input {
+    width: 254px;
+  }
+  
+  .form__submit-button {
+    flex-basis: 254px;
+    height: 50px;
+    margin-right: 0;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+  
+  .form__submit-button::before {
+    width: 254px;
+    height: 50px;
+  }
+} 
+
+@media (max-width: 820px) {
+  .booking {
+    padding-top: 50px;
+    margin-bottom: 60px;
+  }
+  
+  .booking__title {
+    margin-bottom: 40px;
+    min-height: 36px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  .booking__form { 
+    gap: 50px;
+  }
+  
+  .halls-choose-fieldset>.legend {
+    margin-bottom: 30px;
+  }
+  
+  .radio-label {
+    flex-basis: 150px;
+    height: 38px; 
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .form__options-choose-fieldset {
+    gap: 32px 66px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .form__options-choose-fieldset>.legend {
+    margin-bottom: 30px;
+  }
+  
+  .options-choose-fieldset__option-choose-fieldset {
+    width: 301px;
+  }
+
+  .form__time-and-date-choose-fieldset {
+    gap: 14px 106px;
+  }
+  .label-name {
+    order: 2;
+  }
+  
+  .label-surname {
+    order: 4;
+  }
+
+  .label-tel {
+    order: 3;
+  }
+
+  .label-mail {
+    order: 5;
+  }
+
+  .label-number-of-people {
+    order: 1;
+  }
+
+  .time-and-date-choose-fieldset__legend {
+    margin-bottom: 26px;
+  }
+  
+  .form__date-time-booking-block {
+    gap: 50px;
+  }
+  
+  .time-and-date-choose-fieldset__date-time-block {
+    gap: 14px;
+  }
+  
+  .label-name__input, .label-surname__input {
+    width: 280px;
+  }
+  
+  .label-tel__input, .label-mail__input, .label-number-of-people__input {
+    width: 300px;
+  }
+  
+  .form__submit-button {
+    flex-basis: 300px;
+    height: 60px;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 50px;
+  }
+  
+  .form__submit-button::before {
+    width: 300px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 545px) {
+  .booking {
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .booking__title {
+    margin-bottom: 13px;
+    min-height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .booking__form { 
+    gap: 30px;
+  }
+  
+  .halls-choose-fieldset>.legend {
+    margin-bottom: 15px;
+  }
+
+  .legend {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .halls-choose-fieldset__radio-block {
+    flex-wrap: wrap;
+    gap: 14px 20px;
+  }
+
+  .radio-label {
+    flex-basis: 130px;
+    height: 30px; 
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .form__options-choose-fieldset {
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .form__options-choose-fieldset>.legend {
+    margin-bottom: 15px;
+  }
+  
+  .option-choose-fieldset__input-block {
+    gap: 15px;
+  }
+
+  .option-choose-fieldset__label {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .options-choose-fieldset__option-choose-fieldset {
+    width: 280px;
+  }
+
+  .form__time-and-date-choose-fieldset {
+      gap: 15px;
+  }
+
+  .label-name {
+    order: 2;
+  }
+  
+  .label-surname {
+    order: 3;
+  }
+
+  .label-tel {
+    order: 4;
+  }
+
+  .label-mail {
+    order: 5;
+  }
+
+  .label-number-of-people {
+    order: 1;
+  }
+
+  .time-and-date-choose-fieldset__legend {
+    margin-bottom: 25px;
+  }
+  
+  .form__date-time-booking-block {
+    gap: 35px;
+  }
+  
+  .time-and-date-choose-fieldset__visible-item-number, .label-surname__input {
+    margin-bottom: 20px;
+  }
+  
+  .time-and-date-choose-fieldset__date-time-block {
+    gap: 14px;
+  }
+  
+  .label-name__input,
+  .label-surname__input,
+  .time-and-date-choose-fieldset__visible-item-number,
+  .label-tel__input,
+  .label-mail__input,
+  .label-number-of-people__input {
+    width: 280px;
+  }
+  
+  .form__submit-button {
+    flex-basis: 280px;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+  
+  .form__submit-button::before {
+    width: 280px;
+    border-radius: 4px;
+  }
 }

@@ -17,15 +17,7 @@
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
-  --white-color: #FFFFFF;
-  --main-background-color: #1B1A1B;
-  --violet-color: #440F51;
-  --violet-color-2: #6C0287;
-  --black-violet-color: #640AA3;
-  --light-violet-color: #840AA3;
-  --pink-color: #CD06FF;
-  --light-pink-color: #EADEED;
-  --black-color: #000000;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -120,15 +112,14 @@ iframe {
 .container {
   max-width: 1240px;
   padding: 0 30px;
-  padding-top: 30px;
   margin: 0 auto;
 }
 
-.container_contacts {
+/*.container_contacts {
   max-width: 1240px;
   padding: 0 30px;
   margin: 0 auto;
-}
+}*/
 
 html {
   position:relative;
@@ -136,4 +127,24 @@ html {
 
 :hover, :focus, :active {
   transition-duration: 400ms;
+}
+
+  @media (max-width: 1049px) {
+  .container {
+    max-width: 964px;
+  }
+} 
+
+@media (max-width: 820px) {
+  .container {
+    max-width: 768px;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 545px) {
+  .container {
+    max-width: 320px;
+    padding: 0 20px;
+  }
 }

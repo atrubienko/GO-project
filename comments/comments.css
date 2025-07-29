@@ -4,6 +4,7 @@
 
 .comments__title {
   margin-bottom: 40px;
+  min-height: 56px;
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
@@ -13,9 +14,10 @@
 }
 
 .comments__ul {
-display: flex;
-flex-direction: column;
-gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
 }
 
 .ul__li-quote {
@@ -26,6 +28,7 @@ gap: 50px;
   display: flex;
   margin: 0;
   gap: 20px;
+  align-items: center;
 }
 
 .blockquote__figure {
@@ -56,8 +59,170 @@ gap: 11px;
   max-width: 680px;
   min-height: 88px;
   margin: 0;
-  padding-top: 52px;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
+}
+
+@media (max-width: 1049px) {
+  .comments {
+    margin-bottom: 70px;
+  }
+  
+  .comments__title {
+    margin-bottom: 26px;
+    min-height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  
+  .comments__ul {
+    gap: 40px;
+  }
+  
+  .li-quote__blockquote {
+    gap: 38px;
+  }
+  
+  .blockquote__figure {
+    gap: 21px;
+  }
+
+  .figure__img {
+    width: 172px;
+    height: 172px;
+  }
+
+  .figure::before {
+    width: 172px;
+    height: 172px;
+  }
+  
+  .figure__figcaption {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  .blockquote__paragraph {
+    max-width: 515px;
+    min-height: 105px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .blockquote__paragraph::after {
+    content: "Сервис на высоте!";
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .blockquote__paragraph_first::after {
+    display: none;
+  }
+} 
+
+@media (max-width: 820px) {
+  .comments {
+    margin-bottom: 60px;
+  }
+  
+  .comments__title {
+    margin-bottom: 31px;
+    min-height: 36px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  .comments__ul {
+    gap: 30px;
+  }
+  
+  .li-quote__blockquote {
+    gap: 15px;
+  }
+  
+  .blockquote__figure {
+    gap: 17px;
+  }
+
+  .figure__img {
+    width: 153px;
+    height: 153px;
+  }
+
+  .figure::before {
+    width: 153px;
+    height: 153px;
+  }
+  
+  .figure__figcaption {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .blockquote__paragraph {
+    max-width: 393px;
+    min-height: 94px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .blockquote__paragraph::after {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 545px) {
+  .comments {
+    margin-bottom: 30px;
+  }
+  
+  .comments__title {
+    margin-bottom: 15px;
+    min-height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  .comments__ul {
+    gap: 20px;
+  }
+  
+  .li-quote__blockquote {
+    gap: 16px;
+    flex-direction: column;
+  }
+  
+  .blockquote__figure {
+    gap: 9px;
+    align-items: center;
+  }
+
+  .figure__img {
+    width: 86px;
+    height: 86px;
+  }
+
+  .figure::before {
+    width: 86px;
+    height: 86px;
+  }
+  
+  .figure__figcaption {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .blockquote__paragraph {
+    max-width: 280px;
+    min-height: 66px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .blockquote__paragraph::after {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }

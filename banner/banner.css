@@ -40,7 +40,6 @@
   height: 209px;
 }
 
-
 .four-halls-text { 
   color: var(--white-color);
   font-size: 30px;
@@ -98,6 +97,7 @@
 
 .banner__booking-button {
   position: relative;
+  display: inline-block;
   border-radius: 10px;
   border: 0;
   background: var(--violet-color-2);
@@ -114,17 +114,17 @@
 
 .banner__booking-button:hover, .banner__booking-button:focus {
   cursor: pointer;
-  background: var(--light-violet-color-2);
+  background: var(--light-violet-color);
 }
 
 .banner__booking-button:active {
-  background: var(--black-violet-color-2);
+  background: var(--black-violet-color);
 }
 
 .banner__down-button {
   display: flex;
   position: relative;
-  justify-self: center;
+  justify-content: center;
   z-index: 2;
   margin-top: -33px;
 }
@@ -136,7 +136,6 @@
 .banner__down-button::before {
   position: absolute;
   content: url(./img/hover-down.svg);
-  justify-self: center;
   z-index: 3;
   opacity: 0;
   transition: opacity 0.4s;
@@ -145,7 +144,6 @@
 .banner__down-button::after {
   position: absolute;
   content: url(./img/focus-down.svg);
-  justify-self: center;
   z-index: 2;
   opacity: 0;
   transition: opacity 0.4s;
@@ -177,7 +175,278 @@
   position: absolute;
   width: 675px;
   height: 762px;
-  top: 61px;
-  left: 505px;
+  right: 0;
+  bottom: 0;
   z-index: 1;
+}
+
+@media (max-width: 1049px) {
+  .banner {
+    min-height: 583px;
+    margin-bottom: 83px;
+  }
+
+  .banner__title {
+    max-width: 706px;
+    min-height: 120px;
+    font-size: 120px;
+    margin-bottom: 20px;
+  }
+
+  .banner__text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .banner__cards { 
+    margin-bottom: 80px;
+  }
+
+  .banner-cards__four-halls { 
+    width: 168px;
+    height: 173px;
+  }
+
+
+  .four-halls-text { 
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .four-halls-text_four { 
+    font-size: 80px;
+    line-height: 113px;
+  }
+
+  .banner-cards__new-equipment { 
+    width: 140px;
+    height: 145px;
+  }
+
+  .new-equipment-text { 
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .new-equipment-text_new {
+    font-size: 60px;
+    line-height: 85px;
+  }
+
+  .banner__button-background {
+    width: 296px;
+    height: 64px;
+  }
+
+  .banner__booking-button {
+    font-size: 22px;
+    padding: 17px 48px;
+  }
+
+  .down-button__img {
+    display: none;
+    visibility: hidden;
+  }
+
+  .down-button__img-1024px {
+    display: block;
+    visibility: visible;
+  }
+
+  .banner__down-button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    z-index: 2;
+    margin-top: -43px;
+    margin-right: 14px;
+  }
+
+  .banner__down-button::before {
+    position: absolute;
+    content: url(./img/hover-down1024px.svg);
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .banner__down-button::after {
+    position: absolute;
+    content: url(./img/focus-down1024px.svg);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .down-button__active::after {
+    position: absolute;
+    content: url(./img/active-down1024px.svg);
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .banner::after {
+    background-image: url(".//img/banner-1024px.png");
+    width: 453px;
+    height: 520px;
+  }
+}
+
+@media (max-width: 820px) {
+  .banner {
+    min-height: 537px;
+    margin-bottom: 80px;
+  }
+
+  .banner__title {
+    max-width: 506px;
+    min-height: 86px;
+    font-size: 86px;
+    line-height: 100%;
+  }
+
+  .banner__text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+
+  .banner__cards { 
+    margin-bottom: 100px;
+  }
+
+  .banner-cards__four-halls { 
+    width: 103px;
+    height: 107px;
+  }
+
+
+  .four-halls-text { 
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .four-halls-text_four { 
+    font-size: 50px;
+    line-height: 71px;
+  }
+
+  .banner-cards__new-equipment { 
+    width: 89px;
+    height: 92px;
+  }
+
+  .new-equipment-text { 
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .new-equipment-text_new {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .banner__button-background {
+    width: 214px;
+    height: 46px;
+  }
+
+  .banner__booking-button {
+    font-size: 16px;
+    padding: 11px 35px;
+  }
+
+  .banner__down-button {
+    display: none;
+    visibility: hidden;
+  }
+
+  .banner::after {
+    background-image: url(".//img/banner-768px.png");
+    width: 409px;
+    height: 479px;
+  }
+}
+
+@media (max-width: 545px) {
+  .banner {
+    min-height: 204px;
+    margin-bottom: 46px;
+  }
+
+  .banner__title {
+    max-width: 212px;
+    min-height: 35px;
+    font-size: 35px;
+    line-height: 100%;
+    margin-bottom: 6px;
+  }
+
+  .banner__text {
+    font-size: 10px;
+    line-height: 14px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .banner__cards { 
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+
+  .banner-cards__four-halls { 
+    width: 65px;
+    height: 59px;
+  }
+
+
+  .four-halls-text { 
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .four-halls-text_four { 
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .banner-cards__new-equipment { 
+    width: 54px;
+    height: 53px;
+  }
+
+  .new-equipment-text { 
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .new-equipment-text_new {
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  .banner__button-background {
+    width: 117px;
+    height: 27px;
+    border-radius: 4px;
+  }
+
+  .banner__booking-button {
+    font-size: 10px;
+    padding: 8px 13px;
+    line-height: 12px;
+    border-radius: 4px;
+  }
+
+  .banner__down-button {
+    display: none;
+    visibility: hidden;
+  }
+
+  .banner::after {
+    background-image: url(".//img/banner-320px.png");
+    width: 161px;
+    height: 179px;
+  }
 }

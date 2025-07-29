@@ -1,5 +1,6 @@
 .card {
   transition: transform 0.4s;
+  background-size: cover;
 }
 
 .card:hover {
@@ -9,26 +10,30 @@
 .card_vibes {
   background-image: url(../card/img/80s-vibes.jpg);
   background-size: contain;
+  grid-area: vibes;
 }
 
 .card_star-wars {
   background-image: url(../card/img/star-wars.jpg);
   background-size: contain;
+  grid-area: wars;
 }
 
 .card_wild-west {
   background-image: url(../card/img/wild-west.jpg);
   background-size: contain;
+  grid-area: west;
 }
 
 .card_neon {
   background-image: url(../card/img/neon.jpg);
   background-size: contain;
+  grid-area: neon;
 }
-
 
 .card__link {
   min-height: 80px;
+  max-width: 252px;
   font-size: 70px;
   font-weight: 700;
   line-height: 80px;
@@ -36,4 +41,30 @@
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (max-width: 1049px) {
+  .card__link {
+    min-height: 120px;
+    max-width: 252px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+} 
+@media (max-width: 820px) {
+  .card__link {
+    min-height: 100px;
+    max-width: 121px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 545px) {
+  .card__link {
+    min-height: 68px;
+    max-width: 79px;
+    font-size: 26px;
+    line-height: 34px;
+  }
 }
